@@ -1230,6 +1230,52 @@ header {
   }
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    /* Adjust hero section background image */
+    #hero {
+        background-size: cover;
+        background-position: center;
+    }
+    #hero .hero {
+        padding: 0 20px;
+    }
+    #hero h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    #hero h1 span {
+        display: none; /* Hide the animation box on smaller screens for simplicity */
+    }
+
+    /* Adjust "About Me" section */
+    #about .about {
+        padding: 50px 20px;
+    }
+    #about .col-left,
+    #about .col-right {
+        width: 100%;
+        text-align: center;
+    }
+    #about .col-left .about-img {
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+    #about .col-right h1 {
+        font-size: 2rem;
+    }
+    #about .col-right p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    #about .col-right .cta {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+}
+
+
 /* Media query for devices with a max-width of 480px (mobile phones) */
 @media only screen and (max-width: 480px) {
   /* General adjustments */
